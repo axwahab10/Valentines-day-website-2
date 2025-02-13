@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine? 💘</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay loop muted id="backgroundVideo">
+            <source src="images/ishq.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Audio Player -->
+    <div class="audio-container">
+        <audio loop id="backgroundAudio">
+            <source src="images/ishq.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <button id="audioControl">🔊 Play Music</button>
+    </div>
+    
+    <!-- Content Overlay -->
+    <div class="content-overlay">
+        <div class="ola-amigo">
+            <h1>Ola Amigo!! 💘</h1>
+            <p>Shuru karne se pehle, mera sahi se jawaab do !</p>
+            <input type="text" id="replyInput" placeholder="sahi se likhna...">
+            <br>
+            <button onclick="checkReply()">Ye le tera reply !</button>
+            <p id="replyError" style="color: red; display: none;">Arey pagli, "waka waka" likhna! 😜</p>
+        </div>
+        <div class="double-verification hidden">
+            <h1>Tumhe toh bada double verification ka bhoot chara hua hai na? 😏</h1>
+            <p>Lo karo ab apna double verification </p>
+            <button onclick="showHeyBeautiful()">Haan haan ok fine</button>
+        </div>
+        <div class="container1 hidden">
+            <h1>Final step before entering 💖</h1>
+            <p>I have a little surprise for you, but first, enter the secret code! 😉</p>
+            <input type="password" id="codeInput" placeholder="Enter the 4-digit code">
+            <br>
+            <button onclick="checkCode()">Submit</button>
+            <p id="error" style="color: red; display: none;">Wrong code! Try again. 😢</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

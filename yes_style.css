@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    font-size: 3em;
+    color: #bb0064;
+}
+
+.gif_container img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+.message_button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out; /* Apply transition to all properties */
+    display: inline-block; /* Ensure transform applies properly */
+}
+
+.message_button:hover {
+    transform: scale(0.95); /* Increase the scaling effect */
+    background-color: #ff1493;
+}
